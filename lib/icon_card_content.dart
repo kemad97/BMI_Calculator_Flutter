@@ -13,7 +13,7 @@ class IconCardContent extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(icon, size: 40, color: Colors.white),
+        Icon(icon, size: 60, color: Colors.white),
         SizedBox(height: 16.0),
         Text(
           txt,
