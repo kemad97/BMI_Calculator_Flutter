@@ -22,10 +22,13 @@ class ResultsScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            "Your Result",
-            style: Constants.titleTextStyle,
-            textAlign: TextAlign.center,
+          Padding(
+            padding: EdgeInsetsGeometry.directional(start: 16.0, top: 4.0),
+            child: Text(
+              "Your Result",
+              style: Constants.titleTextStyle,
+              textAlign: TextAlign.left,
+            ),
           ),
           Expanded(
             flex: 5,
@@ -37,10 +40,13 @@ class ResultsScreen extends StatelessWidget {
                 children: [
                   Text(resultText, style: Constants.resultTextStyle),
                   Text(bmiResult, style: Constants.bmiTextStyle),
-                  Text(
-                    interpretation,
-                    style: Constants.bodyTextStyle,
-                    textAlign: TextAlign.center,
+                  Padding(
+                    padding: EdgeInsetsGeometry.all(2.0),
+                    child: Text(
+                      interpretation,
+                      style: Constants.bodyTextStyle,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),
